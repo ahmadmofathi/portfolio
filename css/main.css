@@ -299,10 +299,6 @@ footer a:hover{
     }
 }
 @media only screen and (max-width:604px) {
-
-    /* .landing .container{
-        flex-direction: column-reverse;
-    } */
     .contain{
         height: fit-content;
     }
@@ -324,7 +320,6 @@ footer a:hover{
     .img img{
         width: 150px;
         margin-top: 20px;
-        margin-right: 30px;
     }
     .half a{
         font-size: 12px;
