@@ -27,23 +27,26 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                            </li> 
+                            <li class="nav-item">
+                                <a class="nav-link" href="#servi">Services</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#port">Portfolio</a>
                             </li>
+
                             <li class="nav-item">
                                 <a class="nav-link" href="#skills">Skills</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
+                                <a class="nav-link" href="#foot">About</a>
                             </li>
                         </ul>
-                        <a href="#links"><button class="btn">Contact</button></a>
                         </div>
                     </div>
                     </nav>
-            <div class="landing ">
+            <div class="landing page" id="home">
                 <div class="container">
                 <div class="half">
                     <h1> I'm Ahmad Fathy, a<br> <div class="diff">Full-stack Web Developer</div></h1>
@@ -65,7 +68,58 @@
             </div>
     </div>
     <hr>
-    <div class="portfolio" >
+    <div class="services page"  id="servi">
+        <div class="head" >
+            <h2>SERVICES</h2>
+            <p>Services</p>
+        </div>
+        <div class="servs">
+            <div class="card">
+                <div class="icon">
+                <i class="fa-solid fa-laptop-code"></i></div>
+                <h4>Website Development</h4>
+                <p>Developing a high performance websites</p>
+                <i></i>
+            </div>
+            <div class="card">
+                <div class="icon">
+                <i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <h4>Ui/Ux Design</h4>
+                <p>Designing a creative websites</p>
+                <i></i>
+            </div>
+            <div class="card">
+                <div class="icon">
+                <i class="fa-solid fa-tablet"></i></div>
+                <h4>Responsive Pages</h4>
+                <p>A page which is responsive to all screens</p>
+                <i></i>
+            </div>
+            <div class="card">
+                <div class="icon">
+                <i class="fa-solid fa-database"></i></div>
+                <h4>Effective Databases</h4>
+                <p>A well organised and detailed database</p>
+                <i></i>
+            </div>
+            <div class="card">
+                <div class="icon">
+                <i class="fa-solid fa-table"></i></div>
+                <h4>Back-end Development</h4>
+                <p>From your admin panel to your website</p>
+                <i></i>
+            </div>
+            <div class="card">
+                <div class="icon">
+                <i class="fa-solid fa-hand-holding-dollar"></i></div>
+                <h4>Fair Cost & Delivery on time</h4>
+                <p>Not everything must be expensive and late</p>
+                <i></i>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="portfolio page" >
         <div class="container">
         <div class="head">
             <h2 id="port">PORTFOLIO</h2>
@@ -79,13 +133,16 @@
             </div>
             <div class="carousel-inner">
             <div class="carousel-item active">
+                <h6>Elzero template website 1</h6>
                 <video src="img/temp1zero.mp4" autoplay muted ></video>
                 <!-- <img src="img/DSC00026.png" class="d-block w-100" alt="..."> -->
             </div>
             <div class="carousel-item">
+                <h6>Netflix clone</h6>
                 <video src="img/netflix.mp4" autoplay muted></video>
             </div>
             <div class="carousel-item">
+                <h6>Pioneers website</h6>
                 <video src="img/finalproject_jQO8WLvv.mp4" autoplay muted>
             </div>
             </div>
@@ -101,49 +158,67 @@
         </div>
     </div>
     <hr>
-    <div class="skills">
+    <div class="skills page">
         <div class="container">
             <div class="head">
                 <h2 id="skills">SKILLS</h2>
                 <p>skills</p>
             </div>
-            <h3>HTML</h3>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"></div>
+            <div class="cards">
+            <div class="card">
+                <h3>HTML</h3>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="100%" data-width="100%" aria-valuemin="0" aria-valuemax="100" style="width:0%">100%</div>
+                </div>
             </div>
-            <h3>CSS</h3>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%"></div>
+            <div class="card">
+                <h3>CSS</h3>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="90%" data-width="90%" aria-valuemin="0" aria-valuemax="100" style="width:0%">90%</div>
+                </div>
             </div>
-            <h3>Javascript</h3>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%"></div>
+            <div class="card">
+                <h3>Javascript</h3>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="85%" data-width="85%" aria-valuemin="0" aria-valuemax="100" style="width:0%">85%</div>
+                </div>
             </div>
-            <h3>Bootstrap</h3>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%"></div>
+            <div class="card">
+                <h3>Bootstrap</h3>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="90%" data-width="90%" aria-valuemin="0" aria-valuemax="100" style="width:0%">90%</div>
+                </div>
             </div>
-            <h3>MySQL</h3>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%"></div>
+            <div class="card">
+                <h3>MySQL</h3>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="95%" data-width="95%" aria-valuemin="0" aria-valuemax="100" style="width:0%">95%</div>
+                </div>
             </div>
-            <h3>PHP</h3>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%"></div>
+            <div class="card">
+                <h3>PHP</h3>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="80%" data-width="80%" aria-valuemin="0" aria-valuemax="100" style="width:0%">80%</div>
+                </div>
             </div>
-            <h3>Laravel</h3>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%"></div>
+            <div class="card">
+                <h3>Laravel</h3>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="80%" data-width="80%" aria-valuemin="0" aria-valuemax="100" style="width:0%">80%</div>
+                </div>
             </div>
-            <h3>API</h3>
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"></div>
+            <div class="card">
+                <h3>API</h3>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="70%" data-width="70%" aria-valuemin="0" aria-valuemax="100" style="width:0%">70%</div>
+                </div>
+            </div>
             </div>
         </div>
-        </div>
+    </div>
 
-    <footer id="links">
-            <ul>
+    <footer id="links" class="page">
+            <ul id="foot">
                 <li><a href="https://www.facebook.com/ahmadmofathi" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/ahmadmofathi/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
                 <li><a href="https://www.instagram.com/ahmadmofathi/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
