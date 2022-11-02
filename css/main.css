@@ -380,6 +380,9 @@ footer a:hover{
     .navbar-toggler{
         margin-right: 10px;
     }
+     .servs{
+          grid-template-columns: 50% 50%;
+    }
     .card h4{
         font-size: 20px;
     }
@@ -442,8 +445,7 @@ footer a:hover{
         margin-right: 10px;
     }
     .servs{
-        grid-template-columns: 100%;
-    
+          grid-template-columns: 100%;
     }
     .card h4{
         font-size: 16px;
