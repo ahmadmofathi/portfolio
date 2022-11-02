@@ -10,6 +10,9 @@
     font-family: 'Acme', sans-serif;
 
 }
+html{
+    scroll-behavior: smooth;
+}
 body{  
     background-color:var(--back);
     color: var(--main);
@@ -57,7 +60,11 @@ nav ul li a {
 }
 nav ul li a:hover{
     color: var(--sec);
+    border-bottom: 3px solid var(--sec);
     text-decoration: none;
+}
+.nav-link{
+    transition: border-bottom 0.4s linear;
 }
 .btn{
     color: var(--back);
@@ -67,19 +74,39 @@ nav ul li a:hover{
     background-color: var(--sec);
     color: var(--back);
 }
-/* .active{
-    background-color: #ece5fd;
-}
-.active a{
+.active{
+    border-bottom: 3px solid var(--sec);
     color: var(--sec);
-
-} */
+}
 /* Header ending */
 .landing .container{
     max-height: 100vh;
     height: fit-content;
     display: flex;
     justify-content: space-between;
+}
+
+.landing::before{
+    content: "";
+    position: fixed;
+    width: 150%;
+    height: 55%;
+    top: 75%;
+    left: -85%;
+    border-radius: 50%;
+    background-color: #aa96da61;
+    transform: translateX(50%) skew(0deg, -10deg);
+    z-index: -1;
+    animation: waving 5s infinite ease alternate;
+}
+@keyframes waving{
+from{
+    transform: translateX(50%) skew(0deg, -10deg);
+}
+to{
+    transform: translateX(25%) skew(20deg, 2deg);
+
+}
 }
 .landing h1{
     color: #2f0b61;
@@ -127,17 +154,56 @@ nav ul li a:hover{
         opacity: 0%;
     }
 }
+/* Services begining */
+.services{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.servs{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    margin: 0px 90px;
+
+}
+.servs .card{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    transition: 0.7s;
+}
+.card h4,.card p{
+    margin: 8px;
+}
+.icon{
+    font-size: 30px;
+    margin: 8px;
+}
+.servs .card:hover .icon{
+    box-shadow: 0px 0px 0px 200px var(--main);
+    background: var(--main);
+}
+.servs .card:hover{
+    color: #FFFFFF;
+}
 /* Portfolio begining */
 .portfolio{
     max-height: 100vh;
     margin-bottom: 50px;
 }
+
 .carousel{
     margin: 0px 50px;
 }
 .carousel-item video{
     width: 100%;
     height: 500px;
+}
+.carousel-item h6{
+    text-align: center;
+    color: var(--main);
+    font-weight: 500;
 }
 .carousel-control-prev , .carousel-control-next{
     background-color: var(--third);
@@ -162,15 +228,51 @@ nav ul li a:hover{
 /* skills */
 .skills{
     margin-bottom: 65px;
-
+}
+.skills .container{
+    padding-left: 75px;
+    padding-right: 75px;
 }
 .progress-bar{
     background-color: var(--main);
+    transition: width 0.5s linear;
+    color: var(--main);
+    font-weight: 700;
 }
 .progress{
     margin: 10px;
 }
-
+.cards{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.card{
+    box-shadow: 2px 1px 3px 1px var(--third);
+    width: 95%;
+    overflow: hidden;
+    transition: 0.75s;
+    margin: 10px;
+}
+.progress{
+    transition: 0.75s;
+}
+.card:hover .progress{
+    box-shadow: 0px 0px 0px 80px var(--main);
+}
+.card:hover .progress-bar{
+    background-color: var(--third);
+}
+.card:hover h3{
+    color: #FFFFFF;
+}
+.card:hover{
+    background-color: var(--main);
+}
+.card h3{
+    margin: 10px;
+    z-index: 44;
+    transition: 0.75s;
+}
 /* footer begining */
 footer{
     height: auto;
@@ -236,6 +338,15 @@ footer a:hover{
     .head p{
         font-size: 35px;
     }
+    .card h4{
+        font-size: 22px;
+    }
+    .card p{
+        font-size: 18px;
+    }
+    .icon{
+        font-size: 25px;
+    }
     .carousel{
         height: 400px;
     }
@@ -269,6 +380,15 @@ footer a:hover{
     .navbar-toggler{
         margin-right: 10px;
     }
+    .card h4{
+        font-size: 20px;
+    }
+    .card p{
+        font-size: 16px;
+    }
+    .icon{
+        font-size: 22px;
+    }
     .img img{
         width: 220px;
     }
@@ -299,6 +419,10 @@ footer a:hover{
     }
 }
 @media only screen and (max-width:604px) {
+
+    /* .landing .container{
+        flex-direction: column-reverse;
+    } */
     .contain{
         height: fit-content;
     }
@@ -317,9 +441,23 @@ footer a:hover{
     .navbar-toggler{
         margin-right: 10px;
     }
+    .servs{
+        grid-template-columns: 50% 50%;
+    
+    }
+    .card h4{
+        font-size: 16px;
+    }
+    .card p{
+        font-size: 12px;
+    }
+    .icon{
+        font-size: 16px;
+    }
     .img img{
         width: 150px;
         margin-top: 20px;
+        margin-right: 30px;
     }
     .half a{
         font-size: 12px;
