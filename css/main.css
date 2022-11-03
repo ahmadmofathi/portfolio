@@ -380,9 +380,6 @@ footer a:hover{
     .navbar-toggler{
         margin-right: 10px;
     }
-     .servs{
-          grid-template-columns: 50% 50%;
-    }
     .card h4{
         font-size: 20px;
     }
@@ -431,9 +428,22 @@ footer a:hover{
     }
     .landing .container{
         margin-top: 30px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .landing .half .clicks{
+        justify-content: center;
     }
     .landing{
         height: fit-content;
+    }
+    .landing .half{
+        margin-top: 0;
+    }
+    .landing .pic-half{
+        transform: translateX(15px);
     }
     .half h1{
         font-size: 17px;
@@ -445,7 +455,8 @@ footer a:hover{
         margin-right: 10px;
     }
     .servs{
-          grid-template-columns: 100%;
+        grid-template-columns: 100%;
+    
     }
     .card h4{
         font-size: 16px;
